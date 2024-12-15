@@ -6,10 +6,11 @@ import com.nhclassen.powerpack.Powerpack;
 
 public class Main {
     public static void main(String[] args) {
-        Integer capacity = 0;
+        int capacity = 0;
+
         if (args.length > 0) {
             try {
-                Integer arg = Integer.parseInt(args[0]);
+                int arg = Integer.parseInt(args[0]);
                 if (arg > 0) {
                     capacity = arg;
                 } else {
@@ -23,12 +24,15 @@ public class Main {
         } else {
             capacity = 27;
         }
+
         Bag bag = new Bag(capacity);
+
         try {
             Powerpack.packBag(bag);
         } catch (OverPackingException e) {
             System.out.println("WARNING: " + e.getMessage());
         }
+
         System.out.println(bag.getContents());
     }
 }

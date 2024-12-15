@@ -32,7 +32,7 @@ be packing. The default is 27.
 
 From the root of the project, run:
 
-`java -jar target/PowerReviewBackpack-1.0-SNAPSHOT.jar <capacity>`
+`java -jar target/PowerPack-1.0.jar <capacity>`
 
 
 ### Run the program as a Docker image

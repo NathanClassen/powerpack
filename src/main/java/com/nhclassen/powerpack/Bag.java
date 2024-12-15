@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Bag {
-    private Map<String, Integer> contents;
+    private Map<Packable, Integer> contents;
     private Integer capacity;
 
     public Bag(Integer capacity) {
@@ -24,7 +24,7 @@ public class Bag {
 
     public Integer addMultiple(Item i, int count) {
         if (capacity >= (count * i.weight())) {
-            contents.merge(i.name(), count, Integer::sum);
+            contents.merge(i, count, Integer::sum);
             capacity -= (count * i.weight());
             return capacity;
         } else {
@@ -34,8 +34,8 @@ public class Bag {
 
     public List<PackedItem> getContents() {
         List<PackedItem> packedItems = new ArrayList<>();
-        for (String key : contents.keySet()) {
-            packedItems.add(new PackedItem(key, contents.get(key)));
+        for (Packable key : contents.keySet()) {
+            packedItems.add(new PackedItem(key.name(), contents.get(key)));
         }
 
         return packedItems;

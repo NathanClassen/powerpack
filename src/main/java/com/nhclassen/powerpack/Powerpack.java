@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Powerpack {
+   /* could make this configurable; provide items on cmmd line via file to read in */
    private static final Item[] availableItems = new Item[] {
            new Item("Bag of Apples", 5),
            new Item("Trail Mix", 3),

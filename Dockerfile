@@ -6,6 +6,6 @@ COPY . /app
 
 RUN mvn package
 
-ENTRYPOINT ["java", "-jar", "target/PowerReviewBackpack-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/PowerPack-1.0.jar"]
 
 CMD []
