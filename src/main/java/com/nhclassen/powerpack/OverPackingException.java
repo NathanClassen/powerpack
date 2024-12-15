@@ -1,4 +1,4 @@
-package org.example.powerpack;
+package com.nhclassen.powerpack;
 
 public class OverPackingException extends RuntimeException {
     public OverPackingException(String itemName) {

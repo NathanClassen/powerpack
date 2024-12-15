@@ -1,8 +1,8 @@
-package org.example;
+package com.nhclassen;
 
-import org.example.powerpack.Bag;
-import org.example.powerpack.OverPackingException;
-import org.example.powerpack.Powerpack;
+import com.nhclassen.powerpack.Bag;
+import com.nhclassen.powerpack.OverPackingException;
+import com.nhclassen.powerpack.Powerpack;
 
 public class Main {
     public static void main(String[] args) {

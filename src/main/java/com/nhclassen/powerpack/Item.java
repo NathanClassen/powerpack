@@ -1,4 +1,4 @@
-package org.example.powerpack;
+package com.nhclassen.powerpack;
 
 /*
         could have some process to provide a custom list of items

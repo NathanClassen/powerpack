@@ -1,4 +1,4 @@
-package org.example.powerpack;
+package com.nhclassen.powerpack;
 
 import org.junit.jupiter.api.Test;
 

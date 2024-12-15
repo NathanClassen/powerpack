@@ -1,4 +1,4 @@
-package org.example.powerpack;
+package com.nhclassen.powerpack;
 
 public record PackedItem(String name, int count) {
     @Override

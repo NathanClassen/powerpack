@@ -1,4 +1,4 @@
-package org.example.powerpack;
+package com.nhclassen.powerpack;
 
 import java.util.Arrays;
 import java.util.Collections;
